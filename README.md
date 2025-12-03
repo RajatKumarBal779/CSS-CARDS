@@ -1,5 +1,3 @@
-
-
 ##A simple and responsive CSS card design project showcasing different nature themes like mountains, islands, sea, forests, and snow. Each card features:
 -An image with uniform size and white spacing
 -Capsule tags for categories
