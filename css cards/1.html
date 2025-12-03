@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Card Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /*you can use any font from google font with it's import link and font family name*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*By default, every browser applies its own built-in margin and padding to HTML elements (like <body>, <p>, <h1>, etc.)
+        These default styles can make your layout behave differently across browsers.*/
+        body {
+            background-color: gray;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            /* centers cards horizontally */
+            flex-wrap: wrap;
+            /* allows cards to wrap on smaller screens */
+            gap: 15px;
+            /* space between cards */
+        }
+
+
+        .card {
+            background-color: azure;
+            width: 250px;
+            border-radius: 7px;
+            padding: 0px 0px 20px 0px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            /* smooth hover transition */
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            /* shadow on hover */
+            transform: translateY(-5px);
+            /* slight lift */
+        }
+
+        .image {
+            padding: 5px
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+
+        .content {
+            padding: 12px 10px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .content p {
+            font-size: 11px;
+            color: gray;
+            text-align: justify;
+        }
+
+        .capsule {
+            padding: 0px 0px 0px 15px;
+            /*top right and bottom left*/
+        }
+
+        .capsule span {
+            border: 1px solid rgb(36, 182, 198);
+            border-radius: 15px;
+            padding: 1px 3px;
+            /*top bottom and left right*/
+            font-size: 15px;
+            margin: 2px;
+
+        }
+
+        .button {
+            text-align: center;
+            margin-top: auto;
+            /* pushes button to bottom */
+        }
+
+        .button button {
+            padding: 8px 15px;
+            border-radius: 15px;
+            background-color: rgb(191, 245, 245);
+            color: rgb(25, 189, 231);
+            font-size: 9px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: rgb(81, 242, 175);
+            color: rgb(7, 56, 46);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="240px" src="alone.jpg" alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Mountain</span>
+        </div>
+        <div class="content">
+            <h2>Into the Calm</h2>
+            <p>Mountains stand tall as nature’s majestic guardians, their peaks touching the clouds and valleys filled
+                with whispering winds. Surrounded by lush greenery and flowing streams, they remind us of nature’s calm
+                strength and timeless beauty.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="240px" height="160px" src="aerial-shot-small-green-island-middle-ocean.jpg" alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Island</span>
+        </div>
+        <div class="content">
+            <h2>Island Paradise</h2>
+            <p>An island is a peaceful escape surrounded by the endless blue ocean. Soft waves touch the shore, palm
+                trees sway with the wind, and the warm sun makes everything calm. Far from noise and rush, an island
+                teaches us to slow down, breathe, and enjoy the quiet beauty of nature.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="240px" src="premium_photo-1669748157617-a3a83cc8ea23.jpg" alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Sea</span>
+        </div>
+        <div class="content">
+            <h2>Sunset by the Sea</h2>
+            <p>The sun melts into the ocean, painting the sky with warm shades of orange and pink. The breeze gets
+                softer, the waves slow down, and the world feels calm — as if time has stopped to admire the moment.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="240px"
+                src="beautiful-shot-forest-with-yellow-green-leafed-trees-with-sun-shining-through-branches_181624-21909.avif"
+                alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Jungle</span>
+        </div>
+        <div class="content">
+            <h2>Mystic Woods</h2>
+            <p>The forest breathes with life — sunlight dances through the leaves, birds sing softly, and the scent of
+                earth fills the air. Every step deeper into the woods brings peace, as if nature is quietly welcoming
+                you home.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <div class="image">
+            <img width="240px" src="photo-1635420280816-c0dc0ee8a7a7.jpg" alt="">
+        </div>
+        <div class="capsule">
+            <span>Nature</span>
+            <span>Snow</span>
+        </div>
+        <div class="content">
+            <h2>Frozen Silence</h2>
+            <p>White snow blankets the mountains, and the cold air turns every sound into stillness. In this quiet
+                winter world, the mind rests, the heart calms, and beauty is found in pure simplicity.</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
